@@ -22,4 +22,8 @@ iScroll.prototype._init = function () {
 	if ( this.options.zoom ) {
 		this._initZoom();
 	}
+
+	if ( this.options.probeType ) {
+		this._initProbe();
+	}
 };

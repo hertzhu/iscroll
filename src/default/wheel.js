@@ -14,11 +14,11 @@ iScroll.prototype._wheel = function (e) {
 		newX, newY,
 		that = this;
 
-	// Execute the scroll end event after 500ms of wheel scrolling
+	// Execute the scroll end event after 400ms the wheel stopped scrolling
 	clearTimeout(this.wheelTimeout);
 	this.wheelTimeout = setTimeout(function () {
 		that._execCustomEvent('scrollEnd');
-	}, 500);
+	}, 400);
 
 	e.preventDefault();
 
