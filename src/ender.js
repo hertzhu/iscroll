@@ -3,5 +3,5 @@
     iScroll: function (options) {
       return new iScroll(this[0], options)
     }
-  }, true)
+  }, true)aaa
 }(ender, require('iscroll').iScroll)
